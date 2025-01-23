@@ -1,6 +1,5 @@
 
 import React, { useState } from 'react';
-
 const OtpVerification = ({ onVerify, onCancel, onEmailUpdate }) => {
   const [email, setEmail] = useState('');
   const [otp, setOtp] = useState(['', '', '', '']);
