@@ -45,7 +45,7 @@ const OtpVerification = ({ onVerify, onCancel, onEmailUpdate }) => {
     }
 
     try {
-      const response = await fetch('https://kashmir-server4.gofastapi.com/verify', {
+      const response = await fetch('https://dev-server.gofastapi.com/verify', {
         method: 'POST',
         body: JSON.stringify({ email, otp: otpCheck }),
         headers: { 'Content-Type': 'application/json' },
